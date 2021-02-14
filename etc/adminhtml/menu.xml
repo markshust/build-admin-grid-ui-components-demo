@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add
+            id="Macademy_Faq::faq"
+            title="FAQ"
+            translate="title"
+            module="Macademy_Faq"
+            resource="Macademy_Faq::faq"
+            parent="Magento_Backend::content"
+            sortOrder="900"
+        />
+        <add
+            id="Macademy_Faq::question"
+            title="Questions"
+            translate="title"
+            module="Macademy_Faq"
+            resource="Macademy_Faq::question"
+            parent="Macademy_Faq::faq"
+            action="faq/question"
+        />
+    </menu>
+</config>
